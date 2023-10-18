@@ -128,7 +128,7 @@ fi
 # If you don't wanna take it, comment out those lines
 if [[ $IS64BIT == true ]]; then
   rm -f ${TMP_DIR}${BINDIR}/$ARCH/busybox
-  if [[ $ARCH == "x86" ]]; then
+  if [[ $ARCH == "x86_64" ]]; then
     $BUSYBOX wget -c https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/busybox-x86_64-selinux -O ${TMP_DIR}${BINDIR}/$ARCH/busybox
   else
     $BUSYBOX wget -c https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/busybox-arm64-selinux -O ${TMP_DIR}${BINDIR}/$ARCH/busybox
